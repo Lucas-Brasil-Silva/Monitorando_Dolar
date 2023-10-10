@@ -14,6 +14,5 @@ class CotacaoDolarSpyder(scrapy.Spider):
         mensagem = f'A Cotação do dolar esta atualmente em R$ {cotacao_dolar}.'
         contatos = ['E-mails destinatario']
         email = Email('E-mail conta de login','Senha para aplicação e-mail')
-        email.defenior_conteudo(email_remetente='e-mail',lista_de_contatos=contatos,
-                    topico='Cotação Dolar',conteudo_email=mensagem)
+        email.defenior_conteudo(email_remetente='e-mail',lista_de_contatos=contatos,topico='Cotação Dolar',conteudo_email=mensagem)
         email.enviar_email(30)
